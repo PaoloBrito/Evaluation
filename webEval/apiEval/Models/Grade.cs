@@ -9,7 +9,7 @@ namespace apiEval.Models
     }
     public class Grade
     {
-        [Required]
+        [Key]
         public string Subject { get; set; }
         [Required]
         [Range(0, 100)]
@@ -17,6 +17,7 @@ namespace apiEval.Models
         [Required]
         public StateType State { get; set; }
 
+        [Required]
         public Student Student { get; set; }
     }
 }

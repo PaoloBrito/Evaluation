@@ -23,7 +23,7 @@ namespace apiEval.Models
         [Required]
         [DataType(DataType.Date)]
         public int Birthday { get; set; }
-
+        [Required]
         public virtual ICollection<Grade> Grades { get; set; }
     }
 
